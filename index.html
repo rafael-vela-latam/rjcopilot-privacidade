@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RJ Copilot: Política de Privacidade</title>
+<meta name="description" content="Política de Privacidade da extensão RJ Copilot Beta para Chrome (Vela Software LatAm).">
+<!-- Fonte da página pública da política de privacidade do RJ Copilot (decisão 97). HTML puro, sem script e sem nada de
+     fora, para abrir direto na política em qualquer leitor. Ao mudar, publicar de novo e conferir o link no painel da loja. -->
+<style>
+  :root { --vela: #C23237; --t1: #231F20; --t2: #5A5456; --fundo: #FFFFFF; --borda: #E6E1E2; --suave: #FFF8F8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --vela: #E5484D; --t1: #F2EEEF; --t2: #B9B2B4; --fundo: #1A1718; --borda: #3A3436; --suave: #241F20; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--t1); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 780px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { border-bottom: 3px solid var(--vela); padding-bottom: 16px; margin-bottom: 24px; }
+  .marca { color: var(--vela); font-weight: 700; letter-spacing: .02em; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 8px 0; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+  p, li { color: var(--t1); }
+  .meta { color: var(--t2); font-size: .95rem; }
+  .idiomas { margin-top: 12px; font-size: .95rem; }
+  a { color: var(--vela); }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .nota { background: var(--suave); border: 1px solid var(--borda); border-radius: 8px; padding: 12px 16px; }
+  section + section { border-top: 1px solid var(--borda); margin-top: 48px; padding-top: 8px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="marca">RJ Copilot</div>
+  <h1>Política de Privacidade do RJ Copilot Beta</h1>
+  <p class="meta">Extensão para Chrome da Vela Software LatAm. Versão de 23/10/2026.</p>
+  <p class="idiomas"><a href="#pt-BR">Português</a> · <a href="#en">English</a></p>
+</header>
+
+<section id="pt-BR" lang="pt-BR">
+<p>Esta política explica que dados a extensão RJ Copilot Beta trata, para quê, com quem eles são compartilhados, por quanto tempo ficam guardados e como exercer seus direitos pela Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018).</p>
+
+<h2>1. Quem somos</h2>
+<p>O RJ Copilot é um assistente de IA para as equipes de Business Development das divisões da Vela Software. Ele funciona ao lado do Salesforce, no painel lateral do Chrome. O uso é corporativo: só entra quem tem e-mail de uma divisão cadastrada. A controladora dos dados é a <strong>Vela Software LatAm</strong>.</p>
+
+<h2>2. Que dados tratamos</h2>
+<ul>
+  <li><strong>Conta:</strong> e-mail corporativo, nome, papel, divisão e os dados de sessão do login.</li>
+  <li><strong>Dados do Salesforce:</strong> quando você clica em coletar, a extensão lê, na conta aberta no Salesforce, os dados da empresa (como nome, setor e números), contatos, notas, oportunidades, contratos e histórico. A leitura usa a sua própria sessão do Salesforce e é só de leitura: a extensão nunca altera o Salesforce.</li>
+  <li><strong>O que você escreve:</strong> as mensagens do chat, as notas que você marca para a conversa e os critérios de scoring.</li>
+  <li><strong>Documentos:</strong> os arquivos que você envia à base de conhecimento.</li>
+  <li><strong>Voz:</strong> só quando você clica no microfone do chat. O áudio é transformado em texto pelo serviço de voz do próprio navegador (Google, no Chrome). O RJ Copilot recebe só o texto e não grava áudio.</li>
+  <li><strong>Registros técnicos:</strong> metadados de uso (qual função foi chamada, por quem e quando, sem o conteúdo) e registros de erro, para segurança e suporte.</li>
+</ul>
+<p class="nota">Não lemos páginas fora do Salesforce nem o seu histórico de navegação. Não usamos rastreamento, publicidade nem ferramentas de análise de terceiros. Não vendemos dados.</p>
+
+<h2>3. Para que usamos</h2>
+<ul>
+  <li>Responder no chat, resumir notas e preencher o scoring de oportunidades com IA.</li>
+  <li>Buscar trechos na base de conhecimento para embasar as respostas.</li>
+  <li>Manter o login, separar os dados de cada divisão e investigar falhas e incidentes de segurança.</li>
+</ul>
+<p>Os dados são usados só para essas funções. Não são usados para publicidade, para avaliar crédito nem para nenhuma finalidade fora do produto. O uso das informações recebidas segue a Política de Dados do Usuário da Chrome Web Store, incluindo os requisitos de Uso Limitado.</p>
+
+<h2>4. Com quem compartilhamos</h2>
+<ul>
+  <li><strong>Provedores de IA:</strong> para gerar a resposta, o texto do pedido (sua mensagem, as notas marcadas, os dados da conta e trechos da base) vai ao provedor de IA configurado pela sua divisão: Anthropic, Google (Gemini), OpenAI, Microsoft (Azure OpenAI) ou Amazon (AWS Bedrock). Sem configuração própria, o padrão é a Anthropic.</li>
+  <li><strong>Busca semântica:</strong> trechos dos documentos da base e as perguntas que usam a base passam pelo Google Gemini, que gera os índices de busca.</li>
+  <li><strong>Busca na web:</strong> só quando ligada no chat com o Gemini, a consulta gerada pelo modelo vai à busca do Google.</li>
+  <li><strong>Reconhecimento de voz:</strong> o serviço de voz do navegador, como descrito no item 2.</li>
+</ul>
+<p>Esses provedores ficam fora do Brasil (Estados Unidos ou a região escolhida no Azure ou na AWS) e tratam os dados conforme os seus termos de uso de API. Não compartilhamos dados com mais ninguém, salvo obrigação legal.</p>
+
+<h2>5. Onde e por quanto tempo guardamos</h2>
+<p>O banco de dados, o login e o servidor do RJ Copilot ficam num servidor da Vela no Brasil.</p>
+<ul>
+  <li><strong>Conta:</strong> enquanto ela existir. Ao apagar a conta, os dados pessoais dela são apagados do banco.</li>
+  <li><strong>Documentos da base:</strong> até serem removidos.</li>
+  <li><strong>Registros de uso de skills, envios de scoring e metadados de acesso:</strong> 90 dias, apagados automaticamente todos os dias.</li>
+  <li><strong>Registros de erro do banco:</strong> 7 dias. <strong>Cópias de segurança diárias:</strong> 14 dias.</li>
+  <li><strong>Registros de login e de serviço:</strong> ficam no servidor para segurança e investigação de incidentes.</li>
+  <li><strong>No seu navegador:</strong> as notas coletadas e a conversa ficam por até 3 horas e saem ao limpar ou coletar outra conta; a sessão de login fica até você sair.</li>
+</ul>
+<p>Os dados lidos do Salesforce não são gravados no servidor, salvo os que você envia no scoring e trechos de mensagens nos registros de uso de skills (90 dias).</p>
+
+<h2>6. Segurança</h2>
+<p>Toda comunicação usa HTTPS. Cada divisão só vê os próprios dados, por regras no banco. As chaves dos provedores de IA ficam cifradas no servidor (AES-256-GCM). Só administradores acessam o servidor.</p>
+
+<h2>7. Seus direitos</h2>
+<p>Pela LGPD (art. 18), você pode pedir: confirmação de que tratamos seus dados, acesso a eles, correção, eliminação, portabilidade, informação sobre com quem compartilhamos e revogação do consentimento, quando ele for a base do tratamento. Contatos comerciais cujos dados estão no Salesforce também podem fazer esses pedidos. Respondemos em até 15 dias. Depois de uma eliminação, o dado ainda pode existir por até 14 dias nas cópias de segurança.</p>
+<p>As bases legais são a execução do contrato e da relação de trabalho, para o uso da ferramenta pelos funcionários (art. 7º, V), e o legítimo interesse da Vela na atividade de Business Development, para os dados de CRM (art. 7º, IX).</p>
+
+<h2>8. Contato</h2>
+<p>Pedidos e dúvidas sobre privacidade: <a href="mailto:rjose@velalatam.com">rjose@velalatam.com</a> (Rafael José, responsável pelo produto na Vela Software LatAm).</p>
+
+<h2>9. Mudanças nesta política</h2>
+<p>Quando a política mudar, esta página passa a trazer a data da nova versão.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>RJ Copilot Beta Privacy Policy</h1>
+<p class="meta">Chrome extension by Vela Software LatAm. Version of October 23, 2026.</p>
+<p>This policy explains what data the RJ Copilot Beta extension handles, why, who it is shared with, how long it is kept and how to exercise your rights under Brazil's General Data Protection Law (LGPD, Law 13,709/2018).</p>
+
+<h2>1. Who we are</h2>
+<p>RJ Copilot is an AI assistant for the Business Development teams of the Vela Software divisions. It runs next to Salesforce, in Chrome's side panel. It is for corporate use: only people with an e-mail from a registered division can sign in. The data controller is <strong>Vela Software LatAm</strong>.</p>
+
+<h2>2. Data we handle</h2>
+<ul>
+  <li><strong>Account:</strong> corporate e-mail, name, role, division and the login session data.</li>
+  <li><strong>Salesforce data:</strong> when you click collect, the extension reads, on the account open in Salesforce, the company data (such as name, industry and figures), contacts, notes, opportunities, contracts and history. It reads through your own Salesforce session and only reads: the extension never changes Salesforce.</li>
+  <li><strong>What you write:</strong> chat messages, the notes you select for the conversation and the scoring criteria.</li>
+  <li><strong>Documents:</strong> the files you upload to the knowledge base.</li>
+  <li><strong>Voice:</strong> only when you click the chat microphone. The browser's own speech service (Google, in Chrome) turns the audio into text. RJ Copilot receives only the text and does not record audio.</li>
+  <li><strong>Technical records:</strong> usage metadata (which function was called, by whom and when, without the content) and error records, for security and support.</li>
+</ul>
+<p class="nota">We do not read pages outside Salesforce or your browsing history. We do not use tracking, advertising or third-party analytics. We do not sell data.</p>
+
+<h2>3. How we use it</h2>
+<ul>
+  <li>To answer in the chat, summarize notes and fill in opportunity scoring with AI.</li>
+  <li>To search the knowledge base for passages that support the answers.</li>
+  <li>To keep you signed in, keep each division's data apart and investigate failures and security incidents.</li>
+</ul>
+<p>The data is used only for these functions. It is not used for advertising, to determine creditworthiness or for any purpose outside the product. The use of information received complies with the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+
+<h2>4. Who we share it with</h2>
+<ul>
+  <li><strong>AI providers:</strong> to generate the answer, the request text (your message, the selected notes, the account data and knowledge base passages) goes to the AI provider set up by your division: Anthropic, Google (Gemini), OpenAI, Microsoft (Azure OpenAI) or Amazon (AWS Bedrock). Without its own setup, the default is Anthropic.</li>
+  <li><strong>Semantic search:</strong> knowledge base passages and the questions that use the knowledge base go through Google Gemini, which builds the search index.</li>
+  <li><strong>Web search:</strong> only when turned on in the chat with Gemini, the query written by the model goes to Google Search.</li>
+  <li><strong>Speech recognition:</strong> the browser's speech service, as described in item 2.</li>
+</ul>
+<p>These providers are outside Brazil (United States, or the region chosen in Azure or AWS) and handle the data under their API terms. We do not share data with anyone else, except where required by law.</p>
+
+<h2>5. Where and how long we keep it</h2>
+<p>The RJ Copilot database, login and server run on a Vela server in Brazil.</p>
+<ul>
+  <li><strong>Account:</strong> while it exists. When the account is deleted, its personal data is deleted from the database.</li>
+  <li><strong>Knowledge base documents:</strong> until they are removed.</li>
+  <li><strong>Skill usage records, scoring submissions and access metadata:</strong> 90 days, deleted automatically every day.</li>
+  <li><strong>Database error logs:</strong> 7 days. <strong>Daily backups:</strong> 14 days.</li>
+  <li><strong>Login and service logs:</strong> kept on the server for security and incident investigation.</li>
+  <li><strong>In your browser:</strong> the collected notes and the conversation stay for up to 3 hours and are removed when you clear or collect another account; the login session stays until you sign out.</li>
+</ul>
+<p>Data read from Salesforce is not stored on the server, except what you submit in scoring and message excerpts in skill usage records (90 days).</p>
+
+<h2>6. Security</h2>
+<p>All communication uses HTTPS. Each division only sees its own data, enforced by database rules. AI provider keys are encrypted on the server (AES-256-GCM). Only administrators can access the server.</p>
+
+<h2>7. Your rights</h2>
+<p>Under the LGPD (article 18), you can ask for: confirmation that we handle your data, access to it, correction, deletion, portability, information about who we share it with and withdrawal of consent, where consent is the legal basis. Business contacts whose data is in Salesforce can also make these requests. We answer within 15 days. After a deletion, the data may still exist for up to 14 days in backups.</p>
+<p>The legal bases are the performance of the employment relationship and contract, for employees' use of the tool (article 7, V), and Vela's legitimate interest in Business Development, for CRM data (article 7, IX).</p>
+
+<h2>8. Contact</h2>
+<p>Privacy requests and questions: <a href="mailto:rjose@velalatam.com">rjose@velalatam.com</a> (Rafael José, product owner at Vela Software LatAm).</p>
+
+<h2>9. Changes to this policy</h2>
+<p>When the policy changes, this page shows the date of the new version.</p>
+</section>
+</main>
+</body>
+</html>
