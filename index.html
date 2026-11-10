@@ -34,7 +34,7 @@
 <header>
   <div class="marca">RJ Copilot</div>
   <h1>Política de Privacidade do RJ Copilot Beta</h1>
-  <p class="meta">Extensão para Chrome da Vela Software LatAm. Versão de 09/11/2026.</p>
+  <p class="meta">Extensão para Chrome da Vela Software LatAm. Versão de 10/11/2026.</p>
   <p class="idiomas"><a href="#pt-BR">Português</a> · <a href="#en">English</a></p>
 </header>
 
@@ -50,7 +50,7 @@
   <li><strong>Dados do Salesforce:</strong> quando você clica em coletar, a extensão lê, na conta aberta no Salesforce, os dados da empresa (como nome, setor e números), contatos, notas, oportunidades, contratos e histórico. A leitura usa a sua própria sessão do Salesforce e é só de leitura: a extensão nunca altera o Salesforce.</li>
   <li><strong>O que você escreve:</strong> as mensagens do chat, as notas que você marca para a conversa e os critérios de scoring.</li>
   <li><strong>Documentos:</strong> os arquivos que você envia à base de conhecimento.</li>
-  <li><strong>Dados de prospecção:</strong> quando você consulta uma empresa no painel Sócios ou pede ao chat (por exemplo, "abordagem para os founders da empresa X"), o RJ Copilot busca na Receita Federal, pelas fontes BrasilAPI, OpenCNPJ e CNPJá, o cadastro da empresa e o quadro de sócios (nome, qualificação e data de entrada). E-mail, telefone e CPF não são guardados nem enviados à IA. A consulta paga só acontece com o seu clique.</li>
+  <li><strong>Dados de prospecção:</strong> quando você consulta uma empresa no painel Sócios ou pede ao chat (por exemplo, "abordagem para os founders da empresa X"), o RJ Copilot busca na Receita Federal, pelas fontes BrasilAPI, OpenCNPJ e CNPJá, o cadastro da empresa e o quadro de sócios (nome, qualificação e data de entrada). Para achar o CNPJ, o chat também pode abrir o site da empresa e buscar na internet pelo nome e pelo site da empresa (item 4). E-mail, telefone e CPF não são guardados nem enviados à IA. A consulta paga só acontece com o seu clique.</li>
   <li><strong>Voz:</strong> só quando você clica no microfone do chat. O áudio é transformado em texto pelo serviço de voz do próprio navegador (Google, no Chrome). O RJ Copilot recebe só o texto e não grava áudio.</li>
   <li><strong>Registros técnicos:</strong> metadados de uso (qual função foi chamada, por quem e quando, sem o conteúdo) e registros de erro, para segurança e suporte.</li>
 </ul>
@@ -68,7 +68,7 @@
 <ul>
   <li><strong>Provedores de IA:</strong> para gerar a resposta, o texto do pedido (sua mensagem, as notas marcadas, os dados da conta, trechos da base e, nos pedidos de prospecção, o cadastro e o quadro de sócios da empresa consultada) vai ao provedor de IA configurado pela sua divisão: Anthropic, Google (Gemini), OpenAI, Microsoft (Azure OpenAI) ou Amazon (AWS Bedrock). Sem configuração própria, o padrão é a Anthropic.</li>
   <li><strong>Busca semântica:</strong> trechos dos documentos da base e as perguntas que usam a base passam pelo Google Gemini, que gera os índices de busca.</li>
-  <li><strong>Busca na web:</strong> só quando ligada no chat com o Gemini, a consulta gerada pelo modelo vai à busca do Google.</li>
+  <li><strong>Busca na web:</strong> só quando ligada no chat com o Gemini, a consulta gerada pelo modelo vai à busca do Google. Nos pedidos de prospecção, quando o provedor de IA da divisão é a Anthropic, o nome e o site da empresa consultada vão à busca na web da Anthropic, só para achar o CNPJ; nada das notas, do Salesforce ou da conversa vai nessa busca. Também com a Anthropic, e só quando a conta no Salesforce tem site preenchido, a Anthropic abre o site público da empresa (o endereço que já está na conta) e procura o CNPJ escrito nele; só o endereço do site vai nessa consulta, e o site visitado pode registrar o acesso.</li>
   <li><strong>Reconhecimento de voz:</strong> o serviço de voz do navegador, como descrito no item 2.</li>
   <li><strong>Fontes de CNPJ:</strong> BrasilAPI, OpenCNPJ e CNPJá recebem o CNPJ, o domínio do site ou o nome da empresa consultada.</li>
 </ul>
@@ -103,7 +103,7 @@
 
 <section id="en" lang="en">
 <h1>RJ Copilot Beta Privacy Policy</h1>
-<p class="meta">Chrome extension by Vela Software LatAm. Version of November 9, 2026.</p>
+<p class="meta">Chrome extension by Vela Software LatAm. Version of November 10, 2026.</p>
 <p>This policy explains what data the RJ Copilot Beta extension handles, why, who it is shared with, how long it is kept and how to exercise your rights under Brazil's General Data Protection Law (LGPD, Law 13,709/2018).</p>
 
 <h2>1. Who we are</h2>
@@ -115,7 +115,7 @@
   <li><strong>Salesforce data:</strong> when you click collect, the extension reads, on the account open in Salesforce, the company data (such as name, industry and figures), contacts, notes, opportunities, contracts and history. It reads through your own Salesforce session and only reads: the extension never changes Salesforce.</li>
   <li><strong>What you write:</strong> chat messages, the notes you select for the conversation and the scoring criteria.</li>
   <li><strong>Documents:</strong> the files you upload to the knowledge base.</li>
-  <li><strong>Prospecting data:</strong> when you look up a company in the Partners panel or ask the chat (for example, "outreach to the founders of company X"), RJ Copilot fetches from the Brazilian Federal Revenue Service, through the BrasilAPI, OpenCNPJ and CNPJá sources, the company registration and the partners list (name, role and entry date). E-mail, phone and CPF are neither stored nor sent to the AI. A paid lookup only happens with your click.</li>
+  <li><strong>Prospecting data:</strong> when you look up a company in the Partners panel or ask the chat (for example, "outreach to the founders of company X"), RJ Copilot fetches from the Brazilian Federal Revenue Service, through the BrasilAPI, OpenCNPJ and CNPJá sources, the company registration and the partners list (name, role and entry date). To find the CNPJ, the chat may also open the company website and search the web by the company name and website (item 4). E-mail, phone and CPF are neither stored nor sent to the AI. A paid lookup only happens with your click.</li>
   <li><strong>Voice:</strong> only when you click the chat microphone. The browser's own speech service (Google, in Chrome) turns the audio into text. RJ Copilot receives only the text and does not record audio.</li>
   <li><strong>Technical records:</strong> usage metadata (which function was called, by whom and when, without the content) and error records, for security and support.</li>
 </ul>
@@ -133,7 +133,7 @@
 <ul>
   <li><strong>AI providers:</strong> to generate the answer, the request text (your message, the selected notes, the account data, knowledge base passages and, in prospecting requests, the registration and partners list of the company looked up) goes to the AI provider set up by your division: Anthropic, Google (Gemini), OpenAI, Microsoft (Azure OpenAI) or Amazon (AWS Bedrock). Without its own setup, the default is Anthropic.</li>
   <li><strong>Semantic search:</strong> knowledge base passages and the questions that use the knowledge base go through Google Gemini, which builds the search index.</li>
-  <li><strong>Web search:</strong> only when turned on in the chat with Gemini, the query written by the model goes to Google Search.</li>
+  <li><strong>Web search:</strong> only when turned on in the chat with Gemini, the query written by the model goes to Google Search. In prospecting requests, when the division's AI provider is Anthropic, the name and website of the company looked up go to Anthropic's web search, only to find the CNPJ; nothing from the notes, Salesforce or the conversation goes into that search. Also with Anthropic, and only when the account in Salesforce has a website filled in, Anthropic opens the company's public website (the address already on the account) and looks for the CNPJ written on it; only the website address goes into that request, and the visited site may log the access.</li>
   <li><strong>Speech recognition:</strong> the browser's speech service, as described in item 2.</li>
   <li><strong>CNPJ sources:</strong> BrasilAPI, OpenCNPJ and CNPJá receive the CNPJ, the website domain or the name of the company looked up.</li>
 </ul>
