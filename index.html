@@ -34,7 +34,7 @@
 <header>
   <div class="marca">RJ Copilot</div>
   <h1>Política de Privacidade do RJ Copilot Beta</h1>
-  <p class="meta">Extensão para Chrome da Vela Software LatAm. Versão de 23/10/2026.</p>
+  <p class="meta">Extensão para Chrome da Vela Software LatAm. Versão de 09/11/2026.</p>
   <p class="idiomas"><a href="#pt-BR">Português</a> · <a href="#en">English</a></p>
 </header>
 
@@ -50,6 +50,7 @@
   <li><strong>Dados do Salesforce:</strong> quando você clica em coletar, a extensão lê, na conta aberta no Salesforce, os dados da empresa (como nome, setor e números), contatos, notas, oportunidades, contratos e histórico. A leitura usa a sua própria sessão do Salesforce e é só de leitura: a extensão nunca altera o Salesforce.</li>
   <li><strong>O que você escreve:</strong> as mensagens do chat, as notas que você marca para a conversa e os critérios de scoring.</li>
   <li><strong>Documentos:</strong> os arquivos que você envia à base de conhecimento.</li>
+  <li><strong>Dados de prospecção:</strong> quando você consulta uma empresa no painel Sócios ou pede ao chat (por exemplo, "abordagem para os founders da empresa X"), o RJ Copilot busca na Receita Federal, pelas fontes BrasilAPI, OpenCNPJ e CNPJá, o cadastro da empresa e o quadro de sócios (nome, qualificação e data de entrada). E-mail, telefone e CPF não são guardados nem enviados à IA. A consulta paga só acontece com o seu clique.</li>
   <li><strong>Voz:</strong> só quando você clica no microfone do chat. O áudio é transformado em texto pelo serviço de voz do próprio navegador (Google, no Chrome). O RJ Copilot recebe só o texto e não grava áudio.</li>
   <li><strong>Registros técnicos:</strong> metadados de uso (qual função foi chamada, por quem e quando, sem o conteúdo) e registros de erro, para segurança e suporte.</li>
 </ul>
@@ -65,12 +66,13 @@
 
 <h2>4. Com quem compartilhamos</h2>
 <ul>
-  <li><strong>Provedores de IA:</strong> para gerar a resposta, o texto do pedido (sua mensagem, as notas marcadas, os dados da conta e trechos da base) vai ao provedor de IA configurado pela sua divisão: Anthropic, Google (Gemini), OpenAI, Microsoft (Azure OpenAI) ou Amazon (AWS Bedrock). Sem configuração própria, o padrão é a Anthropic.</li>
+  <li><strong>Provedores de IA:</strong> para gerar a resposta, o texto do pedido (sua mensagem, as notas marcadas, os dados da conta, trechos da base e, nos pedidos de prospecção, o cadastro e o quadro de sócios da empresa consultada) vai ao provedor de IA configurado pela sua divisão: Anthropic, Google (Gemini), OpenAI, Microsoft (Azure OpenAI) ou Amazon (AWS Bedrock). Sem configuração própria, o padrão é a Anthropic.</li>
   <li><strong>Busca semântica:</strong> trechos dos documentos da base e as perguntas que usam a base passam pelo Google Gemini, que gera os índices de busca.</li>
   <li><strong>Busca na web:</strong> só quando ligada no chat com o Gemini, a consulta gerada pelo modelo vai à busca do Google.</li>
   <li><strong>Reconhecimento de voz:</strong> o serviço de voz do navegador, como descrito no item 2.</li>
+  <li><strong>Fontes de CNPJ:</strong> BrasilAPI, OpenCNPJ e CNPJá recebem o CNPJ, o domínio do site ou o nome da empresa consultada.</li>
 </ul>
-<p>Esses provedores ficam fora do Brasil (Estados Unidos ou a região escolhida no Azure ou na AWS) e tratam os dados conforme os seus termos de uso de API. Não compartilhamos dados com mais ninguém, salvo obrigação legal.</p>
+<p>Os provedores de IA, a busca semântica, a busca na web e o reconhecimento de voz ficam fora do Brasil (Estados Unidos ou a região escolhida no Azure ou na AWS) e tratam os dados conforme os seus termos de uso de API. Não compartilhamos dados com mais ninguém, salvo obrigação legal.</p>
 
 <h2>5. Onde e por quanto tempo guardamos</h2>
 <p>O banco de dados, o login e o servidor do RJ Copilot ficam num servidor da Vela no Brasil.</p>
@@ -78,6 +80,7 @@
   <li><strong>Conta:</strong> enquanto ela existir. Ao apagar a conta, os dados pessoais dela são apagados do banco.</li>
   <li><strong>Documentos da base:</strong> até serem removidos.</li>
   <li><strong>Registros de uso de skills, envios de scoring e metadados de acesso:</strong> 90 dias, apagados automaticamente todos os dias.</li>
+  <li><strong>Consultas de prospecção:</strong> o cadastro e o quadro de sócios consultados ficam 30 dias em cache, sem e-mail, telefone e CPF; o registro de uso das ferramentas (quem consultou, quando e o alvo em código irreversível), 90 dias.</li>
   <li><strong>Registros de erro do banco:</strong> 7 dias. <strong>Cópias de segurança diárias:</strong> 14 dias.</li>
   <li><strong>Registros de login e de serviço:</strong> ficam no servidor para segurança e investigação de incidentes.</li>
   <li><strong>No seu navegador:</strong> as notas coletadas e a conversa ficam por até 3 horas e saem ao limpar ou coletar outra conta; a sessão de login fica até você sair.</li>
@@ -100,7 +103,7 @@
 
 <section id="en" lang="en">
 <h1>RJ Copilot Beta Privacy Policy</h1>
-<p class="meta">Chrome extension by Vela Software LatAm. Version of October 23, 2026.</p>
+<p class="meta">Chrome extension by Vela Software LatAm. Version of November 9, 2026.</p>
 <p>This policy explains what data the RJ Copilot Beta extension handles, why, who it is shared with, how long it is kept and how to exercise your rights under Brazil's General Data Protection Law (LGPD, Law 13,709/2018).</p>
 
 <h2>1. Who we are</h2>
@@ -112,6 +115,7 @@
   <li><strong>Salesforce data:</strong> when you click collect, the extension reads, on the account open in Salesforce, the company data (such as name, industry and figures), contacts, notes, opportunities, contracts and history. It reads through your own Salesforce session and only reads: the extension never changes Salesforce.</li>
   <li><strong>What you write:</strong> chat messages, the notes you select for the conversation and the scoring criteria.</li>
   <li><strong>Documents:</strong> the files you upload to the knowledge base.</li>
+  <li><strong>Prospecting data:</strong> when you look up a company in the Partners panel or ask the chat (for example, "outreach to the founders of company X"), RJ Copilot fetches from the Brazilian Federal Revenue Service, through the BrasilAPI, OpenCNPJ and CNPJá sources, the company registration and the partners list (name, role and entry date). E-mail, phone and CPF are neither stored nor sent to the AI. A paid lookup only happens with your click.</li>
   <li><strong>Voice:</strong> only when you click the chat microphone. The browser's own speech service (Google, in Chrome) turns the audio into text. RJ Copilot receives only the text and does not record audio.</li>
   <li><strong>Technical records:</strong> usage metadata (which function was called, by whom and when, without the content) and error records, for security and support.</li>
 </ul>
@@ -127,12 +131,13 @@
 
 <h2>4. Who we share it with</h2>
 <ul>
-  <li><strong>AI providers:</strong> to generate the answer, the request text (your message, the selected notes, the account data and knowledge base passages) goes to the AI provider set up by your division: Anthropic, Google (Gemini), OpenAI, Microsoft (Azure OpenAI) or Amazon (AWS Bedrock). Without its own setup, the default is Anthropic.</li>
+  <li><strong>AI providers:</strong> to generate the answer, the request text (your message, the selected notes, the account data, knowledge base passages and, in prospecting requests, the registration and partners list of the company looked up) goes to the AI provider set up by your division: Anthropic, Google (Gemini), OpenAI, Microsoft (Azure OpenAI) or Amazon (AWS Bedrock). Without its own setup, the default is Anthropic.</li>
   <li><strong>Semantic search:</strong> knowledge base passages and the questions that use the knowledge base go through Google Gemini, which builds the search index.</li>
   <li><strong>Web search:</strong> only when turned on in the chat with Gemini, the query written by the model goes to Google Search.</li>
   <li><strong>Speech recognition:</strong> the browser's speech service, as described in item 2.</li>
+  <li><strong>CNPJ sources:</strong> BrasilAPI, OpenCNPJ and CNPJá receive the CNPJ, the website domain or the name of the company looked up.</li>
 </ul>
-<p>These providers are outside Brazil (United States, or the region chosen in Azure or AWS) and handle the data under their API terms. We do not share data with anyone else, except where required by law.</p>
+<p>The AI providers, semantic search, web search and speech recognition are outside Brazil (United States, or the region chosen in Azure or AWS) and handle the data under their API terms. We do not share data with anyone else, except where required by law.</p>
 
 <h2>5. Where and how long we keep it</h2>
 <p>The RJ Copilot database, login and server run on a Vela server in Brazil.</p>
@@ -140,6 +145,7 @@
   <li><strong>Account:</strong> while it exists. When the account is deleted, its personal data is deleted from the database.</li>
   <li><strong>Knowledge base documents:</strong> until they are removed.</li>
   <li><strong>Skill usage records, scoring submissions and access metadata:</strong> 90 days, deleted automatically every day.</li>
+  <li><strong>Prospecting lookups:</strong> the registration and partners list looked up stay 30 days in cache, without e-mail, phone or CPF; the tool usage record (who looked up, when, and the target as an irreversible code), 90 days.</li>
   <li><strong>Database error logs:</strong> 7 days. <strong>Daily backups:</strong> 14 days.</li>
   <li><strong>Login and service logs:</strong> kept on the server for security and incident investigation.</li>
   <li><strong>In your browser:</strong> the collected notes and the conversation stay for up to 3 hours and are removed when you clear or collect another account; the login session stays until you sign out.</li>
